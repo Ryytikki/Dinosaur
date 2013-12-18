@@ -1,0 +1,4 @@
+def play_music():
+	full_path = os.path.dirname(os.path.realpath(sys.argv[0]))
+	song = pygame.mixer.Sound(full_path+ "\\music.ogg")
+	song.play()
